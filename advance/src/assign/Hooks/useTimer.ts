@@ -10,10 +10,9 @@ import React, { useRef, useState } from "react"
      const start=()=>{
       let timmers= setInterval (():void=>{
             setTime(state=>state-1)
-          console.log("ranjan")
-          console.log(flag)
+         
             if(flag){
-                console.log(flag)
+            
                return  clearInterval(timmers)
             }
            },1000)
