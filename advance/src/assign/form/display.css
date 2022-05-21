@@ -1,0 +1,34 @@
+
+
+table{
+    border:1px solid black;
+   margin: auto;
+}
+table th{
+    border:1px solid black;
+   width: 100px;
+}
+table td{
+    border:1px solid black;
+
+}
+footer {
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
