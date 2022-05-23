@@ -5,30 +5,29 @@ import React, { useRef, useState } from "react"
  const useTimer=(initTime:number)=>{
      const [time,setTime]=useState(initTime)
      const [flag,setFlag]=useState(false)
-    //  const timeref=useRef<HTMLInputElement>(null)
-   
+     const timeref=useRef<number|undefined>(null)
+     const stop=()=>{
+        setFlag(true)
+        window.clearInterval(timeref.current)
+     //    console.log(flag)
+       
+      }
+      const reset=()=>{
+        window.clearInterval(timeref.current)
+       setTime(initTime)
+    }
      const start=()=>{
-      let timmers= setInterval (():void=>{
+     timeref.current= window.setInterval (()=>{
             setTime(state=>state-1)
-         
-            if(flag){
-            
-               return  clearInterval(timmers)
-            }
+
            },1000)
-        
+           return ()=> {
+            stop()
+        }
        }
        
-     const stop=()=>{
-       setFlag(true)
-      
-    //    console.log(flag)
-      
-     }
-     const reset=()=>{
-         setFlag(true)
-        setTime(initTime)
-     }
+    
+    
     
 return{
     time,
