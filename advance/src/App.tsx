@@ -3,7 +3,7 @@ import React from 'react';
 // import './App.css';
 // import Form from './assign/form/Form';
 // import Check from './assign/Hooks/Check';
-// import Apps from './Costum component/Apps';
+import Apps from './Costum component/Apps';
 import { TabButton } from './tab/Tabbutton';
 // import General from './optimize/General';
 // import Country from './assign/Country';
@@ -17,7 +17,7 @@ function App() {
     {/* <General/> */}
     {/* <Form/> */}
     {/* <Check/> */}
-    {/* <Apps/> */}
+    <Apps/>
     <TabButton/>
     </div>
   );

@@ -13,3 +13,18 @@ input::-webkit-inner-spin-button{
     -webkit-appearance: none;
     margin:0;
 }
+.colr{
+    background-color:#e3e8e9;
+    width:190px;
+    padding: 15px;
+    margin: auto;
+}
+.colr>input{
+    color:gray;
+}
+.grays{
+    background-color: rgb(189, 168, 168);
+    width:190px;
+    padding: 15px;
+    margin: auto;
+}

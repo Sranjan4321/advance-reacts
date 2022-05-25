@@ -3,7 +3,7 @@ import { Accordian } from "./Accordian";
 // import { Element } from "./Accordian";
  import { OtpInput } from "./OtpInput"
 export const handleChang=(Otp:string)=>{
-    console.log("recieved",Otp);
+  
   
 }
  function Apps(){
@@ -36,7 +36,7 @@ export const handleChang=(Otp:string)=>{
       ];
      return(
          <div className="app">
-           <OtpInput totalInputs={4}  onChange={handleChang}/>
+           <OtpInput totalInputs={5}  onChange={handleChang}/>
            <Accordian data={data}/>
          </div>
      )
