@@ -1,0 +1,15 @@
+*{
+
+}
+.otpInput{
+    width: 20px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    font-size:18px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
