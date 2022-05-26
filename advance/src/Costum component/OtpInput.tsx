@@ -22,6 +22,7 @@ export const OtpInput=({ totalInputs,onChange}:OtpInputType)=>{
                         if(ind>=1){
                             inputRef.current[ind-1].focus()
                             inputRef.current[ind-1].select()
+                            setChange(false)
                         }
                        }else {
                            if(ind<=3){
